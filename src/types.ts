@@ -17,8 +17,17 @@ export interface Project {
 
 export interface Skill {
   name: string;
-  category: 'language' | 'framework' | 'tool';
+  category: 'language' | 'framework' | 'tool' | 'hardware';
   proficiency: number;
   relatedSkills: string[];
   description: string;
+  projectCount: number;
+  totalProjects: number;
+  usedInProjects: string[];
+}
+
+export interface SkillCategory {
+  name: string;
+  skills: Skill[];
+  color: string;
 }
