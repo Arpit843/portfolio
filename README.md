@@ -1,5 +1,4 @@
 # Modern Portfolio Website
-# portfolio based on a dynamic website
 
 A dynamic, interactive portfolio website built with modern web technologies. Features smooth animations, dark mode support, and responsive design.
 

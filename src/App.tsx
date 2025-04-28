@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Hero } from './components/Hero';
 import { ProjectTimeline } from './components/ProjectTimeline';
-import { SkillsVenn } from './components/SkillsVenn';
+//import { SkillsVenn } from './components/SkillsVenn';
 import { ThemeToggle } from './components/ThemeToggle';
 import { ProjectDetails } from './components/ProjectDetails';
 import { Navigation } from './components/Navigation';
@@ -27,7 +27,7 @@ function App() {
             <>
               <Hero />
               <ProjectTimeline />
-              <SkillsVenn />
+            npm
             </>
           } />
           <Route path="/project/:slug" element={<ProjectDetails />} />
