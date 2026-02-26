@@ -58,8 +58,7 @@ export const projects: Project[] = [
       "Ensuring data privacy compliance"
     ],
     images: [
-      "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&q=80",
-      "https://images.unsplash.com/photo-1483921020237-2ff51e8e4b22?w=800&q=80"
+      "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&q=80"      
     ]
   },
 
@@ -89,8 +88,7 @@ export const projects: Project[] = [
       "Integrating dynamic content"
     ],
     images: [
-      "https://images.unsplash.com/photo-1629139671647-c81157721467?w=800&q=80",
-      "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=800&q=80"
+      "https://images.unsplash.com/photo-1629139671647-c81157721467?w=800&q=80"
     ]
   },
   {
@@ -118,8 +116,7 @@ export const projects: Project[] = [
       "Ensuring weather resistance"
     ],
     images: [
-      "https://images.unsplash.com/photo-1558383331-f520f2888351?w=800&q=80",
-      "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80"
+      "https://images.unsplash.com/photo-1558383331-f520f2888351?w=800&q=80"
     ]
   },
   {
@@ -147,8 +144,7 @@ export const projects: Project[] = [
       "Optimizing for low-resource settings"
     ],
     images: [
-      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80",
-      "https://images.unsplash.com/photo-1581093458791-9d42cc05b6ce?w=800&q=80"
+      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80"
     ]
   },
   {
@@ -177,8 +173,7 @@ export const projects: Project[] = [
       "Implementing all core RDBMS concepts"
     ],
     images: [
-      "https://images.unsplash.com/photo-1556761175-b413da5ca68d?w=800&q=80",
-      "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&q=80"
+      "https://images.unsplash.com/photo-1556761175-b413da5ca68d?w=800&q=80"
     ]
   }
 ];
