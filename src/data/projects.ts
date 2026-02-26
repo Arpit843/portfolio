@@ -1,15 +1,15 @@
 import type { Project } from '../types';
 
 export const projects: Project[] = [
-  
-  
-  
+
+
+
   {
     id: 6,
     title: "Personal Portfolio with System Provisioning",
     description: "A personal portfolio website showcasing skills using System Provisioning and Configuration Management",
     fullDescription: "Developed a personal portfolio website to showcase my skills and projects, utilizing principles of System Provisioning and Configuration Management. This project focused on automating the setup and deployment of the portfolio, ensuring a consistent and reproducible environment.",
-    thumbnail: "https://images.unsplash.com/photo-1517694712202-14f959a61795?w=800&q=80",
+    Image: "/Screenshot 2026-02-26 123516.png",
     techStack: ["HTML", "CSS", "JavaScript", "Ansible", "Docker"],
     demoLink: "https://demo.com",
     githubLink: "https://github.com",
@@ -30,8 +30,7 @@ export const projects: Project[] = [
       "Managing infrastructure configurations"
     ],
     images: [
-      "https://images.unsplash.com/photo-1517694712202-14f959a61795?w=800&q=80",
-      "https://images.unsplash.com/photo-1607828672685-f11dd736b339?w=800&q=80"
+      "https://images.unsplash.com/photo-1517694712202-14f959a61795?w=800&q=80"
     ]
   },
   {
@@ -63,7 +62,7 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1483921020237-2ff51e8e4b22?w=800&q=80"
     ]
   },
-  
+
   {
     id: 5,
     title: "Dynamic Bike Showroom Website",
