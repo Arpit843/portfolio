@@ -95,7 +95,7 @@ export const projects: Project[] = [
     id: 2,
     title: "Hearing-Impaired Rider Assistance System",
     description: "Raspberry Pi-based system providing tactile and visual alerts for riders",
-    fullDescription: "Developed an innovative assistance system for hearing-impaired riders using Raspberry Pi. The system processes environmental audio cues and provides tactile feedback through vibration sensors and visual alerts via LED displays.",
+    fullDescription: "Developed an innovative assistance system for hearing-impaired riders using Raspberry Pi. The system processes environmental audio cues and provides tactile feedback through vibration sensors and visual alerts via LED displays.Detects emergency sirens and alerts the rider through vibration + visual signals in real time.Designed to improve road safety for hearing-impaired motorcyclists using smart IoT processing.Raspberry Pi, Python, OpenCV, Sensor Modules",
     thumbnail: "https://images.unsplash.com/photo-1558383331-f520f2888351?w=800&q=80",
     techStack: ["Python", "Raspberry Pi", "GPIO", "Audio Processing"],
     demoLink: "https://demo.com",
