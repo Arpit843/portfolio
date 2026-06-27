@@ -159,6 +159,7 @@
   border-color: var(--accent);
 }
 
+/* ── Sliding grid track ──────────────────────── */
 .slider-track {
   display: grid;
   grid-auto-flow: column;
