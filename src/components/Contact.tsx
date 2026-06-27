@@ -5,9 +5,9 @@ import { useState } from 'react';
 
 const CONTACT_LINKS = [
   { Icon: Mail,     label: 'Email',    value: 'arpitshakkerwal@gmail.com', href: 'mailto:arpitshakkerwal@gmail.com',                          color: '#0ea5e9' },
-  { Icon: Phone,    label: 'Phone',    value: '+91 84311 11209',           href: 'tel:+918431111209',                                          color: '#22c55e' },
+  { Icon: Phone,    label: 'Phone',    value: null,           ,                                          color: '#22c55e' },
   { Icon: Github,   label: 'GitHub',   value: 'Arpit843',                  href: 'https://github.com/Arpit843',                                color: '#8b5cf6' },
-  { Icon: Linkedin, label: 'LinkedIn', value: 'arpit-shakkerwal',          href: 'https://www.linkedin.com/in/arpit-shakkerwal-402a34241/', color: '#0ea5e9' },
+  { Icon: Linkedin, label: 'LinkedIn', value: 'Arpit Shakkerwal',          href: 'https://www.linkedin.com/in/arpit-shakkerwal-402a34241/', color: '#0ea5e9' },
   { Icon: Twitter,  label: 'Twitter',  value: '@arpit_8431',               href: 'https://x.com/arpit_8431',                                   color: '#14b8a6' },
 ];
 
