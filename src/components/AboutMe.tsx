@@ -91,19 +91,19 @@ export const AboutMe = () => {
           >
             <p className="text-[15px] text-slate-600 dark:text-slate-300 leading-[1.85] mb-4">
               I'm a Computer Science undergraduate at Presidency University, Bengaluru, specializing in DevOps,
-              with experience building full-stack web applications using React.js, Next.js, Node.js, PostgreSQL,
-              and REST APIs. I like picking a real, specific problem and following it all the way down — whether
-              that's designing a fair ticket-routing algorithm, hand-drawing SVG paths for 30 Indian states on a
-              map, or automating CIS-benchmark security hardening through a GUI.
+              with experience building web applications using React.js, Next.js, Node.js, PostgreSQL,
+              and REST APIs. I like picking a real, specific problem and following it all the way down, whether
+              that's designing a fair ticket routing algorithm, hand drawing SVG paths for 30 Indian states on a
+              map, or automating CIS benchmark security hardening through a GUI.
             </p>
             <p className="text-[15px] text-slate-600 dark:text-slate-300 leading-[1.85] mb-4">
-              I'm skilled in developing scalable software solutions, workflow automation systems, and data-driven
-              applications, with a strong foundation in backend integration, databases, and problem-solving —
-              and a growing interest in AI-powered and enterprise SaaS platforms.
+              I'm skilled in developing scalable software solutions, workflow automation systems, and data driven
+              applications, with a strong foundation in backend integration, databases, and problem solving
+              and a growing interest in AI powered and enterprise SaaS platforms.
             </p>
             <p className="text-[15px] text-slate-600 dark:text-slate-300 leading-[1.85] mb-6">
-              Outside of web development, I've also built IoT systems — including a Raspberry Pi device that
-              alerts hearing-impaired riders to emergency sirens — which keeps me comfortable moving between
+              Outside of web development, I've also built IoT systems including a Raspberry Pi device that
+              alerts hearing impaired riders to emergency sirens which keeps me comfortable moving between
               a terminal, a circuit board, and a React component.
             </p>
 
