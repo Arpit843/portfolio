@@ -25,7 +25,6 @@ export interface Project {
   status?: 'live' | 'completed' | 'in-progress';
   impact?: string;
 }
-
 export interface Skill {
   name: string;
   category: 'language' | 'framework' | 'tool';
