@@ -51,7 +51,7 @@ export const Navigation = () => {
         {/* Center nav */}
         {isHome && (
           <nav className="hidden md:flex items-center gap-1">
-            {[['Projects', '#projects'], ['Skills', '#skills'], ['Contact', '#contact']].map(([label, href]) => (
+            {[['About', '#about'], ['Skills', '#skills'], ['Projects', '#projects'], ['Contact', '#contact']].map(([label, href]) => (
               <motion.a
                 key={label}
                 href={href}
@@ -110,7 +110,7 @@ export const Navigation = () => {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          {[['Projects', '#projects'], ['Skills', '#skills'], ['Contact', '#contact']].map(([label, href]) => (
+          {[['About', '#about'], ['Skills', '#skills'], ['Projects', '#projects'], ['Contact', '#contact']].map(([label, href]) => (
             <a
               key={label}
               href={href}
