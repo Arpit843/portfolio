@@ -1,33 +1,26 @@
-import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Hero } from './components/Hero';
+import { AboutMe } from './components/AboutMe';
+import { Skills } from './components/Skills';
 import { ProjectTimeline } from './components/ProjectTimeline';
-//import { SkillsVenn } from './components/SkillsVenn';
-import { ThemeToggle } from './components/ThemeToggle';
+import { Contact } from './components/Contact';
 import { ProjectDetails } from './components/ProjectDetails';
 import { Navigation } from './components/Navigation';
 
 function App() {
-  useEffect(() => {
-    const savedTheme = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
-    if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
-      document.documentElement.classList.add('dark');
-    }
-  }, []);
-
+  // Theme is managed entirely inside Navigation via useTheme hook (sets documentElement class)
   return (
     <Router>
-      <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-200">
-        <ThemeToggle />
+      <div className="min-h-screen bg-white dark:bg-slate-900 transition-colors duration-500">
         <Navigation />
         <Routes>
           <Route path="/" element={
             <>
               <Hero />
+              <AboutMe />
+              <Skills />
               <ProjectTimeline />
-            npm
+              <Contact />
             </>
           } />
           <Route path="/project/:slug" element={<ProjectDetails />} />
