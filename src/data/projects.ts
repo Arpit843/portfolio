@@ -4,23 +4,23 @@ export const projects: Project[] = [
   {
     id: 7,
     title: "SmartDesk – Intelligent IT Helpdesk",
-    description: "Full-stack IT ticketing platform with workflow automation, SLA tracking, and rule-based ticket intelligence.",
-    fullDescription: "SmartDesk is a production-grade IT helpdesk ticketing system built with Next.js, Node.js, PostgreSQL, and Prisma ORM. It handles the complete ticket lifecycle — creation, triage, assignment, resolution, and closure — with three role tiers (User, Agent, Admin) and a full audit trail for compliance. The platform's intelligence layer auto-classifies tickets, routes them via a weighted scoring engine, predicts SLA breach risk with actionable recommendations, and surfaces similar historical tickets using TF-IDF-style matching — branded on the landing page as 'AI-powered helpdesk intelligence,' though the underlying logic is rule-based rather than calling an external AI API.",
-    thumbnail: "/images/smartdesk-1.png",
+    description: "Full-stack IT ticketing platform with workflow automation, SLA tracking, and rule based ticket intelligence.",
+    fullDescription: "SmartDesk is a production grade IT helpdesk ticketing system built with Next.js, Node.js, PostgreSQL, and Prisma ORM. It handles the complete ticket lifecycle — creation, triage, assignment, resolution, and closure — with three role tiers (User, Agent, Admin) and a full audit trail for compliance. The platform's intelligence layer auto-classifies tickets, routes them via a weighted scoring engine, predicts SLA breach risk with actionable recommendations, and surfaces similar historical tickets using TF-IDF-style matching — branded on the landing page as 'AI-powered helpdesk intelligence,' though the underlying logic is rule-based rather than calling an external AI API.",
+    thumbnail: "C:\Users\apt8i\Downloads\Screenshot 2026-06-13 132850.png",
     techStack: ["Next.js", "TypeScript", "Node.js", "Prisma", "PostgreSQL", "Tailwind CSS"],
-    demoLink: "https://demo.com",
-    githubLink: "https://github.com",
+    demoLink: "https://smartdesk-pi.vercel.app/",
+    githubLink: "https://github.com/Arpit843/smartdesk",
     type: "fullstack",
     year: 2026,
     slug: "smartdesk-helpdesk",
     status: "completed",
     impact: "Reduces average ticket-to-assignment time by ~70% through automated routing and eliminates manual SLA monitoring.",
     features: [
-      "Context-aware ticket classification — keyword scoring + pattern matching auto-assigns priority & category",
+      "Context aware ticket classification — keyword scoring + pattern matching auto-assigns priority & category",
       "Adaptive routing engine — 40% workload, 35% expertise, 15% priority handling, 10% round-robin weighting",
       "SLA risk prediction — time-based + complexity scoring with per-ticket recommendations",
       "Resolution helper — TF-IDF similarity against historical tickets and a knowledge base",
-      "Role-based access control — User, Agent, Admin with middleware-enforced route protection",
+      "Role based access control — User, Agent, Admin with middleware enforced route protection",
       "Public & internal comments with full activity audit log",
       "Workflow automation for ticket assignment, escalation, and SLA tracking"
     ],
@@ -41,7 +41,7 @@ export const projects: Project[] = [
         note: "Demo accounts are seeded via `npm run setup`"
       },
       {
-        scenario: "Auto-classification of a new ticket",
+        scenario: "Auto classification of a new ticket",
         input: "Title: 'Cannot connect to VPN' | Body: 'Critical — I cannot connect to the corporate VPN and have a board meeting in 2 hours'",
         output: "Priority: HIGH (confidence 0.85) | Category: NETWORK | Reasons: keyword 'cannot connect', urgency phrase 'board meeting', time-sensitive language",
       },
@@ -56,15 +56,15 @@ export const projects: Project[] = [
   {
     id: 8,
     title: "India Monitor – National Intelligence Dashboard",
-    description: "Real-time geospatial monitoring dashboard tracking environmental, infrastructure, economic, and civic events across India via an interactive SVG map.",
-    fullDescription: "India Monitor is a React + Vite dashboard that provides a unified, real-time situational view of India across seven monitoring domains: Environment (earthquakes, cyclones, floods, fires), Weather, Infrastructure, Economy, Public Services, News, and Health. The core UI is a fully custom SVG map of all 30 Indian states and union territories — built without any external map library — with clickable regions, live event markers, and toggleable geospatial data layers. A smart geographic focus engine switches between 8 landmass-based analysis modes (Himalayan, Gangetic, Coastal, etc.) that automatically reprioritise relevant map layers and panels. The mock data layer is structured to be a straight drop-in swap for live APIs from USGS, IMD, CPCB, NTES, and NSE/BSE.",
+    description: "Real time geospatial monitoring dashboard tracking environmental, infrastructure, economic, and civic events across India via an interactive SVG map.",
+    fullDescription: "India Monitor is a React + Vite dashboard that provides a unified, real time situational view of India across seven monitoring domains: Environment (earthquakes, cyclones, floods, fires), Weather, Infrastructure, Economy, Public Services, News, and Health. The core UI is a fully custom SVG map of all 30 Indian states and union territories — built without any external map library — with clickable regions, live event markers, and toggleable geospatial data layers. A smart geographic focus engine switches between 8 landmass-based analysis modes (Himalayan, Gangetic, Coastal, etc.) that automatically reprioritise relevant map layers and panels. The mock data layer is structured to be a straight drop-in swap for live APIs from USGS, IMD, CPCB, NTES, and NSE/BSE.",
     thumbnail: "/images/indiamonitor-thumb.png",
     techStack: ["React 18", "TypeScript", "Vite", "Tailwind CSS", "Custom SVG"],
-    demoLink: "https://indiamonitor.vercel.app",
+    demoLink: "https://indiamonitor.vercel.app/",
     githubLink: "https://github.com/Arpit843/indiamonitor",
     year: 2025,
-    slug: "india-monitor",
-    status: "in-progress",
+    slug: "india monitor",
+    status: "in progress",
     impact: "Aggregates 7 monitoring domains and 8 geographic zones into a single interface that would otherwise require switching between 10+ separate government portals.",
     features: [
       "Custom SVG map of all 30 states/UTs — no external map library, sub-100KB",
@@ -76,7 +76,7 @@ export const projects: Project[] = [
       "Scrolling news ticker with live IST clock (useClock hook)"
     ],
     challenges: [
-      "Hand-crafting accurate SVG paths for all 30+ Indian states/UTs without a map generation library",
+      "Hand crafting accurate SVG paths for all 30+ Indian states/UTs without a map generation library",
       "Building the smart focus engine so layer switching feels instant and contextually correct",
       "Designing a mock data schema generic enough that real API responses slot in without refactoring",
       "Keeping the single-page layout responsive across the panel grid, sidebar, and map canvas simultaneously"
@@ -112,16 +112,16 @@ export const projects: Project[] = [
     fullDescription: "Floating Notepad is a lightweight Electron desktop application designed to stay out of your way while always being reachable. It renders as a transparent, frameless glass-blur window pinned above all other applications — ideal for jotting quick notes without switching context. The app supports multiple named tabs (double-click to rename), debounced auto-save via localStorage, font-size controls, live word/character count, and dark/light theme toggle. All state — tabs, labels, theme, font size — is persisted as a single JSON object under a versioned localStorage key. Window pin state and OS-level controls (minimize, close) are handled via Electron IPC so the renderer never needs OS permissions directly.",
     thumbnail: "/images/notepad-thumb.png",
     techStack: ["Electron", "JavaScript", "HTML", "CSS", "IPC"],
-    demoLink: null,
-    githubLink: "https://github.com",
+    demoLink: "https://flloating-notepad.vercel.app/",
+    githubLink: "https://github.com/Arpit843/flloating-notepad",
     type: "desktop",
     year: 2025,
-    slug: "floating-notepad",
+    slug: "floating notepad",
     status: "completed",
-    impact: "Eliminates context-switching for note-taking — the app stays visible above all open windows without needing a dedicated monitor or virtual desktop.",
+    impact: "Eliminates context switching for note taking — the app stays visible above all open windows without needing a dedicated monitor or virtual desktop.",
     features: [
       "Always-on-top toggle — float above all windows or release to normal z-order via pin button",
-      "Multiple named tabs — create, close, and rename with a double-click; state persisted across restarts",
+      "Multiple named tabs — create, close, and rename with a double click; state persisted across restarts",
       "Debounced auto-save — writes to localStorage 800 ms after last keystroke; no manual save needed",
       "Dark/light theme toggle with CSS custom property switching — preference remembered",
       "A+/A− font-size controls in the status bar",
@@ -132,7 +132,7 @@ export const projects: Project[] = [
       "Handling Electron IPC correctly so the renderer can toggle always-on-top without direct OS access",
       "Implementing transparent frameless window drag without native title bar",
       "Preventing tab close from losing unsaved content via debounce flush on close",
-      "Ensuring theme and font-size state round-trips cleanly through the versioned localStorage schema"
+      "Ensuring theme and font size state round trips cleanly through the versioned localStorage schema"
     ],
     images: [
       "/images/notepad-1.png",
@@ -161,7 +161,7 @@ export const projects: Project[] = [
   {
     id: 6,
     title: "App Graph Builder",
-    description: "A take-home assignment: an interactive graph canvas for visualizing service/app dependencies, with a status inspector and mock backend.",
+    description: "A take home assignment: an interactive graph canvas for visualizing service/app dependencies, with a status inspector and mock backend.",
     fullDescription: "App Graph Builder is a small but carefully-built UI exercise — a canvas where services or apps are rendered as nodes with health status (Healthy/Degraded/Down), connected by dependency edges. Built with ReactFlow for the canvas, the app uses Mock Service Worker (MSW) to intercept real fetch() calls so application code makes genuine HTTP requests with no mocking logic baked in — meaning swapping in a real API later requires no code changes. State is deliberately split: ReactFlow's own node state holds graph data, while Zustand is scoped strictly to UI-only state (selected node, mobile panel toggle, active tab), avoiding duplicated state between the two.",
     thumbnail: "/images/graphbuilder-thumb.png",
     techStack: ["React 18", "Vite", "TypeScript", "ReactFlow", "TanStack Query", "Zustand", "shadcn/ui", "MSW"],
@@ -169,7 +169,7 @@ export const projects: Project[] = [
     githubLink: "https://github.com/Arpit843/graph-builder",
     type: "frontend",
     year: 2026,
-    slug: "app-graph-builder",
+    slug: "app graph builder",
     status: "completed",
     features: [
       "ReactFlow canvas with custom nodes — each renders a service with a Healthy/Degraded/Down status badge",
@@ -180,8 +180,8 @@ export const projects: Project[] = [
       "Responsive mobile drawer via Radix Dialog for the inspector panel on small screens"
     ],
     challenges: [
-      "Deciding where graph data should live — settled on ReactFlow's own node state as the single source of truth, with Zustand strictly UI-only",
-      "Using MSW so the app talks to a real-feeling API surface without writing throwaway mock-fetch logic",
+      "Deciding where graph data should live — settled on ReactFlow's own node state as the single source of truth, with Zustand strictly UI only",
+      "Using MSW so the app talks to a real feeling API surface without writing throwaway mock fetch logic",
       "Building a responsive inspector that becomes a slide-over drawer on mobile without duplicating its component logic"
     ],
     images: [
@@ -214,7 +214,7 @@ export const projects: Project[] = [
     year: 2025,
     slug: "ubuntu-hardening-tool",
     status: "completed",
-    impact: "Replaces manual, checklist-driven CIS hardening with a GUI workflow plus generated audit reports — reducing hardening time and human error across multiple servers.",
+    impact: "Replaces manual, checklist driven CIS hardening with a GUI workflow plus generated audit reports — reducing hardening time and human error across multiple servers.",
     features: [
       "GUI-driven CIS benchmark hardening checks — no need to memorize or manually run shell commands",
       "Audit report generation summarizing applied changes and outstanding gaps",
@@ -288,14 +288,14 @@ export const projects: Project[] = [
     fullDescription: "A university Web Technologies course project that went beyond the brief. Built a fully dynamic bike showroom where all listing data lives in a typed JSON catalogue. Users can filter bikes by category (road, MTB, hybrid, electric), sort by price or specs, expand individual model pages with image carousels and full spec sheets, and use a side-by-side comparison tool for up to three models. State is managed entirely in React without any external state library.",
     thumbnail: "/images/bikeshowroom-thumb.png",
     techStack: ["React", "TypeScript", "HTML", "CSS", "React Router"],
-    demoLink: "https://demo.com",
-    githubLink: "https://github.com",
+    demoLink: null,
+    githubLink: "https://github.com/Arpit843/Bike-showroom",
     type: "frontend",
     year: 2023,
     slug: "bike-showroom-website",
     status: "completed",
     features: [
-      "Filterable catalogue — category, price range, brand with URL-synced query params",
+      "Filterable catalogue — category, price range, brand with URL synced query params",
       "Side-by-side spec comparison — select up to 3 models",
       "Image carousel with keyboard navigation on each model page",
       "Contact enquiry form with client-side validation",
@@ -325,16 +325,16 @@ export const projects: Project[] = [
     fullDescription: "An IoT safety device built for hearing-impaired motorcyclists. A Raspberry Pi 4 runs a Python audio pipeline that samples ambient sound at 16 kHz via a USB microphone, applies a band-pass filter centred on emergency siren frequencies (700–1600 Hz), and uses a lightweight OpenCV-assisted classifier to distinguish sirens from ambient road noise. When a siren is detected with >80% confidence the system triggers a vibration motor mounted in the handlebar grip and a wide-angle LED strip on the dashboard — both with direction estimation (left/right/rear) based on a two-microphone phase-difference calculation.",
     thumbnail: "/images/rider-assist-thumb.png",
     techStack: ["Python", "Raspberry Pi 4", "GPIO", "OpenCV", "NumPy", "PyAudio"],
-    demoLink: "https://demo.com",
-    githubLink: "https://github.com",
+    demoLink: null,
+    githubLink: null,
     type: "hardware",
     year: 2023,
     slug: "rider-assistance-system",
     status: "completed",
     impact: "Prototype tested at 60 dB ambient road noise with 87% siren detection accuracy and <200 ms alert latency — within the safety window for evasive action.",
     features: [
-      "Real-time audio sampling at 16 kHz with band-pass filter for siren frequency range",
-      "Dual-microphone phase-difference algorithm estimates siren direction (left/right/rear)",
+      "Real-time audio sampling at 16 kHz with band pass filter for siren frequency range",
+      "Dual-microphone phase difference algorithm estimates siren direction (left/right/rear)",
       "Vibration motor feedback via GPIO PWM — intensity scales with detection confidence",
       "Wide-angle LED strip with directional colour coding: red rear, amber side, blue front",
       "Adjustable sensitivity threshold to reduce false positives in high-noise environments",
@@ -359,7 +359,7 @@ export const projects: Project[] = [
       },
       {
         scenario: "False positive suppression — truck air brake",
-        input: "Sound: truck air-release burst at 1100 Hz, duration 80 ms",
+        input: "Sound: truck air release burst at 1100 Hz, duration 80 ms",
         output: "Filtered out — classifier requires >300 ms sustained tone with frequency sweep pattern; no alert triggered"
       }
     ]
@@ -372,8 +372,8 @@ export const projects: Project[] = [
     fullDescription: "A low-cost remote health monitoring solution targeted at rural or under-resourced clinics. An Arduino Uno reads pulse rate and blood oxygen saturation (SpO₂) from a MAX30100 sensor module, serialises the readings as JSON at 1 Hz, and transmits them over a SIM800L GSM module to a lightweight Node.js web portal. Doctors receive real-time vitals in a browser dashboard with configurable threshold alerts — a buzzer and SMS fires when pulse or SpO₂ drops outside the safe range. All readings are stored in a SQLite database for historical review.",
     thumbnail: "/images/patient-monitor-thumb.png",
     techStack: ["Arduino Uno", "MAX30100 Sensor", "SIM800L GSM", "Node.js", "SQLite", "HTML/CSS"],
-    demoLink: "https://demo.com",
-    githubLink: "https://github.com",
+    demoLink: null,
+    githubLink: null,
     type: "hardware",
     year: 2022,
     slug: "patient-monitoring",
@@ -382,8 +382,8 @@ export const projects: Project[] = [
     features: [
       "MAX30100 sensor reads pulse rate (BPM) and SpO₂ (%) at 1 Hz",
       "SIM800L GSM module transmits JSON readings over GPRS — no Wi-Fi required",
-      "Node.js web portal renders live vitals with Chart.js time-series graph",
-      "Configurable alert thresholds — SMS + on-device buzzer when outside safe range",
+      "Node.js web portal renders live vitals with Chart.js time series graph",
+      "Configurable alert thresholds — SMS + on device buzzer when outside safe range",
       "SQLite storage for 30-day historical readings per patient",
       "Battery-backed power supply with ~8 h operation on a 5000 mAh powerbank"
     ],
@@ -418,14 +418,14 @@ export const projects: Project[] = [
     thumbnail: "/images/bankmanager-thumb.png",
     techStack: ["Python 3", "MySQL", "mysql-connector-python"],
     demoLink: null,
-    githubLink: "https://github.com",
+    githubLink: null,
     type: "backend",
     year: 2021,
     slug: "bank-management-system",
     status: "completed",
     features: [
-      "Account creation with customer KYC fields and auto-generated account number",
-      "Deposit, withdrawal, and balance inquiry with real-time balance update",
+      "Account creation with customer KYC fields and auto generated account number",
+      "Deposit, withdrawal, and balance inquiry with real time balance update",
       "Inter-account fund transfer with MySQL transaction rollback on insufficient funds",
       "Mini-statement: last 10 transactions per account with timestamp and running balance",
       "Parameterised queries throughout — no raw string concatenation, no SQL injection risk",
